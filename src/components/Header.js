@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Box, AppBar, Toolbar, Button, Typography, Tabs, Tab} from '@mui/material'
-import { Link, Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { authActions } from '../redux/store';
 import toast from 'react-hot-toast'
