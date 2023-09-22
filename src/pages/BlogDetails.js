@@ -14,7 +14,7 @@ const BlogDetails = () => {
     // get blog details
     const getBlogDetail = async () => {
         try {
-            const {data} = await axios.get(`https://blogapp-backend-b2dq.onrender.com/blog/get-blog/${id}`)
+            const {data} = await axios.get(`back-end-blogapp-7qcajd3xi-badhribbn.vercel.app/blog/get-blog/${id}`)
             if(data?.success){
                 setBlog(data?.blog);
                 setInputs({
