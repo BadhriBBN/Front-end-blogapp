@@ -14,7 +14,7 @@ const BlogDetails = () => {
     // get blog details
     const getBlogDetail = async () => {
         try {
-            const {data} = await axios.get(`back-end-blogapp-7qcajd3xi-badhribbn.vercel.app/blog/get-blog/${id}`)
+            const {data} = await axios.get(`https://back-end-blogapp.onrender.com/blog/get-blog/${id}`)
             if(data?.success){
                 setBlog(data?.blog);
                 setInputs({
@@ -46,7 +46,7 @@ const BlogDetails = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
          try {
-            const {data} = await axios.put(`/api/v1/blog/update-blog/${id}`, {
+            const {data} = await axios.put(`https://back-end-blogapp.onrender.com/blog/update-blog/${id}`, {
                 title:inputs.title,
                 description:inputs.description,
                 image:inputs.image,
