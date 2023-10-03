@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://blogapp-backend-b2dq.onrender.com",
+  "proxy": "https://back-end-blogapp.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
