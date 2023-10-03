@@ -46,7 +46,7 @@ const BlogDetails = () => {
       const handleSubmit = async (e) => {
         e.preventDefault();
          try {
-            const {data} = await axios.put(`https://back-end-blogapp.onrender.com/blog/update-blog/${id}`, {
+            const {data} = await axios.put(`https://blogapp-bakend.onrender.com/blog/update-blog/${id}`, {
                 title:inputs.title,
                 description:inputs.description,
                 image:inputs.image,
